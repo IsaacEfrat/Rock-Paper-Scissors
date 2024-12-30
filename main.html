@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Rock Paper Scissors Web Game</title>
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="title_container">
+                <h1 id="title">Rock Paper Scissors</h1>
+                <p id="description">
+                    Welcome to Rock Paper Scissors. Choose a move by pressing one of the options below.
+                </p>
+            </div>
+            <div id="game_container">
+                <div id="button_container">
+                    <button id="rock" onclick="playerMove(0)"><i data-feather="cloud"></i></button>
+                    <button id="paper" onclick="playerMove(1)"><i data-feather="file"></i></button>
+                    <button id="scissors" onclick="playerMove(2)"><i data-feather="scissors"></i></button>
+                </div>
+                <p id="output">The computer won't go so easy on you this time...</p>
+                <hr>
+                <p id="score">Score: 0</p>
+                <button id="tutorial" onclick="alert('Player 1 chooses an option between rock, paper and scissors. Then the computer will randomly select an option. Rock beats scissors, scissors beats paper and paper beats rock. A win is +1 score and a loss is -1 score')"><i data-feather="info"></i></button>
+            </div>
+        </div>
+        <script>
+            feather.replace({width: "2.5rem", height: "2.5rem"})
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>
