@@ -96,7 +96,7 @@ body {
 
 @media only screen and (max-width: 768px) {  
     #title {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
 
     #title_container {
@@ -109,6 +109,26 @@ body {
     }
     
     #description {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
+        margin-bottom: 0;
     }
+
+    #rock, #paper, #scissors {
+        height: 3.3rem;
+    }
+
+    hr {
+        margin-top: 2rem;
+    }
+
+    #score {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    #output {
+        font-size: 0.45rem;
+    }
+
+
 }
